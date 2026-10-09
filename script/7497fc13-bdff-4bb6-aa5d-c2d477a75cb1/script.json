@@ -1,0 +1,97 @@
+{
+  "version": "v1",
+  "script_id": "7497fc13-bdff-4bb6-aa5d-c2d477a75cb1",
+  "script": {
+    "category": "default",
+    "component_id": "7497fc13-bdff-4bb6-aa5d-c2d477a75cb1",
+    "component_ids": "",
+    "component_name": "breseq",
+    "component_type": "script",
+    "container_template_id": "2089283231097556992",
+    "created_at": "2026-10-09T01:41:36.949Z",
+    "description": "",
+    "edges": "",
+    "file_type": "",
+    "id": "2108372276125634560",
+    "img": "",
+    "install_key": "",
+    "order_index": 0,
+    "position": "",
+    "project_id": "36",
+    "prompt": "",
+    "script_type": "shell",
+    "store_id": "0",
+    "sub_container_id": "",
+    "tags": "[]",
+    "tools_container_id": ""
+  },
+  "container_template_specs": [
+    {
+      "app_type": "code-server",
+      "change_uid": false,
+      "command": "",
+      "cpu": 0,
+      "created_at": "2026-08-17T09:28:33.956Z",
+      "description": "",
+      "env": {
+        "ANTHROPIC_AUTH_TOKEN": "sk-3c00405e530947c0b54a068886d308d4",
+        "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro[1m]",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro[1m]",
+        "ANTHROPIC_MODEL": "deepseek-v4-pro[1m]",
+        "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "786432",
+        "CLAUDE_CODE_EFFORT_LEVEL": "max",
+        "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-v4-flash",
+        "CONDA_ENVS_PATH": "$CONDA_PACKAGE_DIR",
+        "DEFAULT_WORKSPACE": "$WORKSPACE_PATH",
+        "PGID": "$DOCKER_GROUPID",
+        "PUID": "$USERID",
+        "PYTHONUSERBASE": "$PYTHON_PACKAGE_DIR",
+        "R_LIBS_USER": "$R_PACKAGE_DIR"
+      },
+      "id": "2089283231097556992",
+      "labels": null,
+      "memory": 0,
+      "mounts": [
+        {
+          "mode": "rw",
+          "owner": "app_session",
+          "source": "$USER_CONFIG_DIR/code-server/settings.json",
+          "target": "/config/data/User/settings.json",
+          "type": "file"
+        },
+        {
+          "mode": "rw",
+          "owner": "app_session",
+          "source": "$USER_CONFIG_DIR/code-server/continue_config.yaml",
+          "target": "/config/.continue/config.yaml",
+          "type": "file"
+        }
+      ],
+      "name": "code-server-quarto",
+      "port": 8443,
+      "scheduling_constraint": null,
+      "work_dir": ""
+    }
+  ],
+  "container_template_definitions": [
+    {
+      "created_at": "2026-08-17T09:28:33.956Z",
+      "display_name": "",
+      "id": "2089283231097556992",
+      "image_id": "2089283076688449536",
+      "spec_id": "2089283231097556992"
+    }
+  ],
+  "container_images": [
+    {
+      "description": "",
+      "full_name": "registry.cn-hangzhou.aliyuncs.com/wybioinfo/code-server-quarto",
+      "id": "2089283076688449536",
+      "name": "code-server-quarto",
+      "pull_policy": "IfNotPresent",
+      "size": 0
+    }
+  ]
+}

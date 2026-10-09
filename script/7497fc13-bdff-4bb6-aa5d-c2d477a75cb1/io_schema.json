@@ -1,0 +1,69 @@
+{
+  "scatter": {
+    "field": "sample_list",
+    "mode": "each"
+  },
+  "workflow": [
+    {
+      "label": "sample_list",
+      "type": "GroupSelectAssayButton",
+      "required": true,
+      "name": "sample_list",
+      "input_type": "assay",
+      "item_name": "sample",
+      "db": true,
+      "resolver": {
+        "accept_formats": [
+          "WGS_SHORT_READ"
+        ]
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "label": "sample",
+      "type": "SelectAssay",
+      "required": true,
+      "name": "sample",
+      "input_type": "assay",
+      "db": true,
+      "resolver": {
+        "accept_formats": [
+          "WGS_SHORT_READ"
+        ]
+      }
+    },
+    {
+      "label": "input2",
+      "name": "input2",
+      "type": "BaseInput",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "tsv",
+      "type": "file"
+    },
+    {
+      "name": "plot",
+      "type": "file"
+    }
+  ],
+  "params": [
+    {
+      "name": "params_name",
+      "label": "params_name",
+      "type": "BaseInput",
+      "initialValue": "params_value"
+    }
+  ],
+  "resources": {
+    "cpu": 4,
+    "memory": "6GB"
+  },
+  "ui": {
+    "icon": "scissors",
+    "color": "green"
+  }
+}
