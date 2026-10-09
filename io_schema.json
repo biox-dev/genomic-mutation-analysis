@@ -1,0 +1,26 @@
+{
+  "scatter": {
+    "field": "sample_list",
+    "mode": "each"
+  },
+  "inputs": [
+    {
+      "label": "sample_list",
+      "type": "GroupSelectAssayButton",
+      "required": true,
+      "name": "sample_list",
+      "input_type": "assay",
+      "item_name": "sample",
+      "db": true,
+      "resolver": {
+        "accept_formats": [
+          "WGS_SHORT_READ"
+        ]
+      }
+    }
+  ],
+  "params": [],
+  "outputs": [],
+  "resources": {},
+  "ui": {}
+}

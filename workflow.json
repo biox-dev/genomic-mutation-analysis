@@ -5,7 +5,6 @@
     "category": "default",
     "component_id": "",
     "container_id": "",
-    "created_at": "2026-10-09T01:35:53.7Z",
     "dag_definition": {
       "edges": [],
       "nodes": [
@@ -20,7 +19,6 @@
       ]
     },
     "description": "",
-    "id": "2108370836439175168",
     "img": "",
     "input_component_ids": [],
     "install_key": "",
@@ -28,10 +26,8 @@
     "order_index": 0,
     "output_component_ids": [],
     "parent_component_id": "",
-    "project_id": "36",
     "prompt": "",
     "relation_type": "tools",
-    "store_id": "2108565532885127168",
     "tags": [],
     "workflow_id": "3d9f05ec-4b99-4248-8e12-14cdead1ab8e"
   },
@@ -43,19 +39,15 @@
       "component_name": "breseq",
       "component_type": "script",
       "container_template_id": "2089283231097556992",
-      "created_at": "2026-10-09T01:41:36.949Z",
       "description": "",
       "edges": "",
       "file_type": "",
-      "id": "2108372276125634560",
       "img": "",
       "install_key": "",
       "order_index": 0,
       "position": "",
-      "project_id": "36",
       "prompt": "",
       "script_type": "shell",
-      "store_id": "0",
       "sub_container_id": "",
       "tags": "[]",
       "tools_container_id": ""
